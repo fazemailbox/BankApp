@@ -4,8 +4,6 @@
  */
 package core.models;
 
-import java.util.Random;
-
 /**
  *
  * @author stairs

@@ -20,7 +20,6 @@ public class UserList {
             if(ustorage.getUsers().isEmpty()){
                 return new Response ("No users available",Status.NOT_FOUND);
             }else{
-                //Se tiene que verificar si hay solo un usuario o más?
                 ustorage.getUsers().sort((obj1, obj2) -> (obj1.getId() - obj2.getId()));
                 
                 return new Response("Showing users",Status.OK, ustorage.getUsers());

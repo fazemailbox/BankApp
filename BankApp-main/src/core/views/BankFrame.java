@@ -663,7 +663,6 @@ public class BankFrame extends javax.swing.JFrame {
             
             JOptionPane.showMessageDialog(null, response.getMessage(), "Response Message", JOptionPane.INFORMATION_MESSAGE);
             
-            @SuppressWarnings("unchecked") //casting explícito
             ArrayList<Transaction> transactions = (ArrayList<Transaction>) response.getObject();   
             
             model.setRowCount(0);

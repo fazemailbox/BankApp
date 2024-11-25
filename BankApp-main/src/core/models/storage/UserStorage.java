@@ -37,26 +37,8 @@ public class UserStorage {
         return true;
     }
     
-    public User getUser(int id) {
-        for (User user : this.users) {
-            if (user.getId() == id) {
-                return user;
-            }
-        }
-        return null;
-    }
-    
     public ArrayList<User> getUsers(){
         return users;
     }
     
-    public boolean delUser(int id) {
-        for (User user : this.users) {
-            if (user.getId() == id) {
-                this.users.remove(user);
-                return true;
-            }
-        }
-        return false;
-    }
 }
